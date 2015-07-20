@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Causality - The High Performance Computing Company</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+
+    <!-- Main Stylesheets -->
+    <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/nv.d3.min.css" type="text/css">
+
+    <!-- Icon Fonts  -->
+    <link rel="stylesheet" href="stylesheets/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/StrokeGap.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/lightGallery.css" type="text/css">
+
+    <!-- Customize Color Css -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/colors/default.css" id="colors">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script><script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+    <div class="preloading">
+        <img class="loading-gif" src="images/loading.svg" alt="preloader">
+    </div>
+    <header data-scroll-header class="navbar navbar-default navbar-fixed-top " role="banner">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-navigation">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" data-scroll href="#top">
+                    <!--<img class="" src="images/logo.png" height="60" alt="logo">-->
+                    <h4>Causality</h4>
+                </a>
+            </div>
+            <div class="collapse navbar-collapse main-navigation">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a data-scroll href="#top" class="active">Home</a>
+                    </li>
+                    <li><a data-scroll href="#services">Solutions</a>
+                    </li>
+                    <li><a data-scroll href="#process">Process</a>
+                    </li>
+                    <li><a data-scroll href="#team">Team</a>
+                    </li>
+                    <li><a data-scroll href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="home-slider" id="top" data-2x="images/header2x.jpg">
+        <div class="container">
+            <div class="home-slider-caption">
+                <h1 class="wow bounceInLeft">If computing power doubles every two years, why is my software running slower than ever?</h1>
+                <!--<a href="#" class="btn btn-outline btn-primary btn-icon active btn-lg btn-rounded wow bounceInUp" data-wow-delay="0.5s">Take a Tour<span class="fa fa-angle-right icon-with-btn"></span></a>
+                <a href="#" class="btn btn-outline btn-white btn-icon btn-lg btn-rounded wow bounceInUp" data-wow-delay="0.7s">sign up now<span class="fa fa-angle-right icon-with-btn"></span></a> -->
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading">Value Proposition</h2>
+                    <h3 class="section-sub-heading">... or how to bring back the free lunch.</h3>
+                </div>
+            </div>
+            <div class="services">
+                <div class="row">
+                    <div class="service col-md-4 col-sm-6 col-xs-12 wow bounceInLeft" data-wow-delay="0.2s">
+                        <div class="fa-4x service-icon icon icon-ChartUp animate-icon"></div>
+                        <h3>Pony Language</h3>
+                        <a href="http://www.ponylang.org" class="btn btn-outline btn-primary btn-medium btn-rounded wow bounceInUp" data-wow-delay="0.1s">read more</a>
+                    </div>
+                    <div class="service col-md-4  col-sm-6 col-xs-12 wow bounceInLeft" data-wow-delay="0.3s">
+                        <div class="fa-4x service-icon icon icon-Info animate-icon"></div>
+                        <h3>Pony Programming Trainings</h3>
+                        <a href="mailto:trainings@causality.io" class="btn btn-outline btn-primary btn-medium btn-rounded wow bounceInUp" data-wow-delay="0.4s">book</a>
+                    </div>
+                    <div class="service col-md-4  col-sm-6 col-xs-12 wow bounceInRight" data-wow-delay="0.5s">
+                        <div class="fa-4x service-icon icon icon-Help animate-icon"></div>
+                        <h3>Pony Commercial Support</h3>
+                        <a href="mailto:support@causality.io" class="btn btn-outline btn-primary btn-medium btn-rounded wow bounceInUp" data-wow-delay="0.4s">get in touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="process" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading wow bounceInUp" data-wow-duration="0.8s">Process</h2>
+                    <h3 class="section-sub-heading wow bounceInRight" data-wow-duration="0.8s">Three simple steps to run your business better.</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div role="tabpanel" class="wow fadeInUp">
+                        <ul class="list-inline about-tabs" role="tablist">
+                            <li role="presentation" class="active">
+                                <a href="#brainstorm" aria-controls="brainstorm" role="tab" data-toggle="tab"><i class="icon icon-Tools"></i>
+                    <span>Development Tools</span>
+                  </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#research" aria-controls="research" role="tab" data-toggle="tab"><i class="icon icon-Forward"></i>
+                    <span>The Causality High Performance Platform</span>
+                  </a>
+                            </li>
+
+                            <li role="presentation">
+                                <a href="#execute" aria-controls="execute" role="tab" data-toggle="tab"><i class="icon icon-Truck"></i>
+                    <span>Migrate selectively & gradually</span>
+                  </a>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="tab-content about-tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="brainstorm">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-5">
+                                    <h3><span>step 1</span><i class="icon icon-Tools"></i></h3>
+                                </div>
+                                <div class="col-md-8 col-xs-12 colored-box">
+
+                                    <p align="justify">
+                                    Pony is more than just a programming language. It is a collection of ideas that helps you to implement
+                                    high performance, scalable and reliable applications more reliably and more efficiently. We integrate with
+                                    widely adopted tools such as <a href="https://packagecontrol.io/packages/Pony%20Language">Sublime Text</a>,
+                                    <a href="https://atom.io/packages/language-pony">Atom</a> and <a href="https://github.com/CausalityLtd/VS-pony">Visual Studio</a>. Pony programs can be debugged with standard tools like <a href="http://lldb.llvm.org">LLDB</a> and <a href="http://www.gnu.org/software/gdb/">GDB</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="research">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-5">
+                                    <h3><span>step 2</span><i class="icon icon-Forward"></i></h3>
+                                </div>
+                                <div class="col-md-8 colored-box col-xs-12">
+
+                                    <p align="justify">
+                                    The Causality Platform is a generic application framework, based on Pony, that allows you to develop your applications independent of an underlying IT infrastructure to which you want to deploy your applications. Write a program once and run it anywhere, without the overhead of an interpreter or virtual machine. We even support heterogeneous clusters!
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="execute">
+                            <div class="row">
+                                <div class="col-md-4 col-xs-5">
+                                    <h3><span>step 3</span><i class="icon icon-Truck"></i></h3>
+                                </div>
+                                <div class="col-md-8 colored-box col-xs-12">
+
+                                    <p align="justify">
+                                    We know you have critical and important applications in-place. They cannot simply be replaced. This is why we have made sure that Causality technology is as interoperable as possible. For example, Pony is compatible with C and C++. It is therefore possible to replace performance critical parts of an application first, and migrate step by step.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="callout" class="image" data-2x="images/sublime_pony.png">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="callout">
+                        <div class="callout-button wow bounceInRight">
+                            <a href="http://tutorial.ponylang.org" class="btn btn-outline btn-primary btn-icon btn-lg btn-rounded">Get started<span class="fa fa-angle-right icon-with-btn"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading wow bounceInRight">Portfolio</h2>
+                    <h3 class="section-sub-heading wow bounceInLeft">We seamlessly reconceptualize client-centered core productive competencies</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="controls  wow bounceInDown" id="filters">
+                <button class="filter active" data-filter="*">All</button>
+                <button class="filter" data-filter=".category-1">Category 1</button>
+                <button class="filter" data-filter=".category-2">Category 2</button>
+            </div>
+        </div>
+        <div class="container">
+            <div id="makePortfolio" class="portfolio-container">
+                <ul id="novelty-portfolio">
+                    <li data-src="images/big7.gif" data-sub-html="#description-1">
+                        <div id="description-1" style="display:none;">
+                            <div class="customHtml customHtml-portfolio">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4>Project Heading</h4>
+                                            <p>Description of the project.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#" class="btn btn-sm btn-outline btn-rounded btn-white">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item category-2">
+                            <img class="img-responsive" src="images/big7.gif" alt="">
+                            <div class="meta">
+                            </div>
+                        </div>
+                    </li>
+                    <li data-src="images/beats.png" data-sub-html="#description-2">
+                        <div id="description-2" style="display:none;">
+                            <div class="customHtml customHtml-portfolio">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4>Project Heading</h4>
+                                            <p>Description of the project.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#" class="btn btn-sm btn-outline btn-rounded btn-white">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item category-1">
+                            <img class="img-responsive" src="images/beats.png" alt="">
+                            <div class="meta">
+                            </div>
+                        </div>
+                    </li>
+                    <li data-src="images/odyssey_ui_anim.gif" data-sub-html="#description-3">
+                        <div id="description-3" style="display:none;">
+                            <div class="customHtml customHtml-portfolio">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4>Project Heading</h4>
+                                            <p>Description of the project.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#" class="btn btn-sm btn-outline btn-rounded btn-white">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item category-2">
+                            <img class="img-responsive" src="images/odyssey_ui_anim.gif" alt="">
+                            <div class="meta">
+                            </div>
+                        </div>
+                    </li>
+                    <li data-src="images/iwatch.png" data-sub-html="#description-4">
+                        <div id="description-4" style="display:none;">
+                            <div class="customHtml customHtml-portfolio">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4>Project Heading</h4>
+                                            <p>Description of the project.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#" class="btn btn-sm btn-outline btn-rounded btn-white">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item category-1">
+                            <img class="img-responsive" src="images/iwatch.png" alt="">
+                            <div class="meta">
+                            </div>
+                        </div>
+                    </li>
+                    <li data-src="images/beats-2.png" data-sub-html="#description-5">
+                        <div id="description-5" style="display:none;">
+                            <div class="customHtml customHtml-portfolio">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h4>Project Heading</h4>
+                                            <p>Description of the project.</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a href="#" class="btn btn-sm btn-outline btn-rounded btn-white">View Project</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item category-1">
+                            <img class="img-responsive" src="images/beats-2.png" alt="">
+                            <div class="meta">
+                            </div>
+                        </div>
+                    </li>
+                    <li data-src="images/dribbble_small_iwatch.gif">
+                        <div class="portfolio-item category-2">
+                            <img class="img-responsive" src="images/dribbble_small_iwatch.gif" alt="">
+                            <div class="meta">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
+    <section id="team" class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading wow flipInX">Team Causality</h2>
+                    <!-- <h3 class="section-sub-heading wow flipInY">Alone we can do so little, together we can do so much.</h3> -->
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row team-members">
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="member-image">
+                            <img src="images/team/swc.png" class="img-responsive member-thumb" alt="team-member">
+                        </div>
+                        <div class="usermeat">
+                            <h3 class="name">Sylvan Clebsch</h3>
+                            <p class="designation">Chief Technical Officer</p>
+                            <ul class="social-icons list-inline">
+                                <li>
+                                    <a href="https://uk.linkedin.com/pub/sylvan-clebsch/8a/272/a21">
+                                        <img src="images/social/linkedin.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="member-image">
+                            <img src="images/team/scd.jpeg" class="img-responsive member-thumb" alt="team-member">
+                        </div>
+                        <div class="usermeat">
+                            <h3 class="name">Prof. Sophia Drossopoulou</h3>
+                            <p class="designation">Chief Scientist</p>
+                            <ul class="social-icons list-inline">
+                                <li>
+                                    <a href="https://www.linkedin.com/pub/sophia-drossopoulou/41/94b/464">
+                                        <img src="images/social/linkedin.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="team-member wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="member-image">
+                            <img src="images/team/cng.jpeg" class="img-responsive member-thumb" alt="team-member">
+                        </div>
+                        <div class="usermeat">
+                            <h3 class="name">Dr. Constantine Goulimis</h3>
+                            <p class="designation">Chairman</p>
+                            <ul class="social-icons list-inline">
+                                <li>
+                                    <a href="https://www.linkedin.com/pub/constantine-goulimis/19/9bb/844">
+                                        <img src="images/social/linkedin.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                  <div class="col-md-3 col-sm-6">
+                    <div class="team-member wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="member-image">
+                            <img src="images/team/amcn.png" class="img-responsive member-thumb" alt="team-member">
+                        </div>
+                        <div class="usermeat">
+                            <h3 class="name">Andy McNeil</h3>
+                            <p class="designation">Senior Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- <div class="row">
+                <div class="col-md-12">
+                    <div class="more-team-members wow flipInX">
+                        <ul class="list-inline">
+                            <li class="wow flipInX" data-wow-delay="0.2s">
+                                <img src="images/team/amn.png" class="img-responsive" alt="">
+                                <p class="small-team-name">Andrew McNeil</p>
+                                <p class="designation">Senior Engineer</p>
+                            </li>
+                            <li class="wow flipInX hidden-xs" data-wow-delay="0.9s"><a href="#" class="btn btn-outline btn-icon btn-primary btn-medium btn-rounded mt60">Join us, We are hiring! <span class="fa fa-check icon-with-btn"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+               <div class="col-md-12 visible-xs">
+                    <a href="#" class="btn btn-outline btn-icon btn-block btn-primary btn-medium btn-rounded mt60">Join us, We are hiring! <span class="fa fa-check icon-with-btn"></span></a>
+
+                </div>
+            </div>
+        </div>-->
+    </section>
+    <section id="contact">
+        <div id="googlemap"></div>
+        <div id="map-switch">
+            <button class="btn btn-primary">Show Map</button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="section-heading wow bounceInUp">Questions?</h2>
+                    <h3 class="section-sub-heading wow bounceInRight" data-wow-duration="0.8s">Send us your queries, feedback, suggestions or you can say Hello! </h3>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="result"></div>
+                    <div class="contact-form">
+                        <form id="contact_form" method="post" class="form" role="form">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6 form-group wow bounceInLeft">
+                                    <input class="form-control" id="name" name="name" placeholder="Name " type="text">
+                                </div>
+                                <div class="col-md-4 col-sm-6 form-group wow bounceInUp">
+                                    <input class="form-control" id="email" name="email" placeholder="Email" type="email">
+                                </div>
+                                <div class="col-md-4 form-group wow bounceInRight">
+                                    <input class="form-control" id="phone" name="phone" placeholder="Phone " type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <textarea class="form-control wow bounceInUp" data-wow-delay="0.4s" id="message" name="message" placeholder="Message" rows="1"></textarea>
+                                </div>
+                            </div>
+                            <div class="row mt20">
+                                <div class="col-md-12 form-group">
+                                    <button id="submit_btn" class="btn btn-outline btn-primary btn-icon pull-right btn-lg btn-rounded wow bounceInUp" data-wow-delay="0.3s">Send
+                                        <span class="fa fa-chevron-right icon-with-btn"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="site-footer">
+        <section>
+            <div class="container">
+                <div class="section-content row">
+                    <div class="col-md-3 col-sm-6">
+                        <aside class="widget wow bounceInUp">
+                            <div class="widget-header">
+                                <h4>About</h4>
+                            </div>
+                            <!-- <p>Lorem ipsum Pariatur ut aute mollit commodo sint excepteur nulla duis qui officia ad magna in tempor. <a href="#">More →</a>
+                            </p> -->
+                            <address>
+                                <strong>Causality Ltd</strong>
+                                <br>45 Queens Gate Gardens
+                                <br>SW7 5ND, London
+                                <br>
+                            </address>
+                        </aside>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <aside class="widget wow bounceInUp">
+                            <div class="widget-header">
+                                <h4>Recent news</h4>
+                            </div>
+                            <ul class="post-list">
+                                <li>
+                                    <div class="details">
+                                        <h5 class="title"><a href="http://tutorial.ponylang.org" rel="bookmark">A Pony tutorial is available!</a>
+                      </h5>
+                                        <div class="meta">April 1, 2015</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="details">
+                                        <h5 class="title"><a href="http://www.ponylang.org" rel="bookmark">Pony version 0.1.0 released!</a>
+                      </h5>
+                                        <div class="meta">April 1, 2015</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="details">
+                                        <h5 class="title"><a href="http://sandbox.ponylang.org" rel="bookmark">Check out the Pony sandbox!</a>
+                      </h5>
+                                        <div class="meta">March 16, 2015</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <aside class="widget wow bounceInUp">
+                            <div class="widget-header">
+                                <h4>Elsewhere</h4>
+                            </div>
+                            <ul class="list-inline footer-social">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/social/facebook.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/social/twitter.png" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/social/linkedin.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <!-- <aside class="widget wow bounceInUp">
+                            <div class="widget-header">
+                                <h4>Twitter Feeds</h4>
+                            </div>
+                            <div class="tweets" data-username="twitter" data-count="1">
+                            </div>
+                        </aside>-->
+                    </div>
+                    <!-- <div class="col-md-3 col-sm-6">
+                        <aside class="widget wow bounceInUp">
+                            <div class="widget-header">
+                                <h4>
+                    <img src="images/mailchimp.png" alt="" class="mailchimp-img wow bounceInDown" data-wow-delay="0.9s">&nbsp;MailChimp Newsletter</h4>
+                            </div>
+                            <div class="footer-newsletter">
+                                <p>Subscribe to our newsletter and stay tuned to all our updates and offers.</p>
+                                <form action="#" id="mc-form" method="post" class="subscription">
+                                    <div class="input-group">
+                                        <input type="email" class="form-control" placeholder="Your email address" id="mc-email">
+                                        <span class="input-group-btn">
+                        <button role="button" type="submit" class="btn btn-primary"><i class="fa fa-check"></i>
+                        </button>
+                      </span>
+                                    </div>
+                                    <label for="mc-email" class="text-danger text-center mc-label"></label>
+                                </form>
+                            </div>
+                        </aside>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+       <section id="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 col-sm-6">
+                        <h4>Causality</h4>
+                        <p class="copyright">
+                            © 2014-2015 | Causality Ltd.
+                        </p>
+                    </div>
+                    <div class="col-md-5 pt20 col-sm-6">
+                        <nav id="footer-nav" class="text-right pull-right">
+                            <ul class="list-inline">
+                                <!--<li><a href="#">Jobs <span class="label label-info">We are hiring</span></a>
+                                </li> -->
+                                <li><a href="#">Terms</a>
+                                </li>
+                                <li><a href="#">Privacy Policy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div id="back-to-top">
+        <a class="back-to-top" data-scroll href="#top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- Main Scripts -->
+    <script src="javascripts/modernizr.js"></script>
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/bootstrap.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="javascripts/jquery.nicescroll.min.js"></script>
+    <script src="javascripts/imagesloaded.pkgd.min.js"></script>
+    <script src="javascripts/isotope.pkgd.min.js"></script>
+    <script src="javascripts/wow.min.js"></script>
+    <script src="javascripts/mail.js"></script>
+    <script src="javascripts/ajaxchimp.min.js"></script>
+    <script src="javascripts/smooth-scroll.min.js"></script>
+    <script src="javascripts/lightGallery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="javascripts/twitter/jquery.tweet.js"></script>
+
+    <!-- Include the Google Maps API library - required for embedding maps -->
+    <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+    <!-- Custom JS -->
+    <script src="javascripts/custom.js"></script>
+    <!-- Google Analytics -->
+    <!--<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-40566302-9', 'auto');
+    ga('send', 'pageview');
+    </script>-->
+</body>
+
+</html>

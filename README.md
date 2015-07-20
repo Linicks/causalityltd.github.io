@@ -1,2 +1,4 @@
-# causalityltd.github.io
+causality.io
+============
+
 The Causality website

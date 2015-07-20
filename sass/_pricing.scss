@@ -1,0 +1,67 @@
+section.pricing {
+    background-color: $pricing-bg;
+    .pricing-tables {
+        display: table;
+        width: 100%;
+        margin-top: 30px;
+        > * {
+            display: table-cell !important;
+            float: none;
+            margin: 0;
+            text-align: center;
+        }
+        .popular {
+            >.pricing-table {
+                background: $main-color;
+                color: #FFFFFF !important;
+            }
+            hr {
+                border-color: darken($main-color, 5%) !Important;
+            }
+        }
+        .pricing-table {
+            @include box-shadow(0 0 1px rgba(0, 0, 0, 0.2));
+            @include transition(all .3s);
+            background: #ffffff;
+            padding: 30px 0;
+            > ul {
+                margin-bottom: 30px;
+                > li {
+                    font-size: 1em;
+                    text-transform: capitalize;
+                    padding: 10px 0;
+                }
+            }
+            h3 {
+                text-transform: capitalize;
+                font-size: 2.5em;
+                margin-bottom: 20px;
+            }
+            .price {
+                height: 75px;
+                ins {
+                    text-decoration: none;
+                    font-size: 4em;
+                    font-weight: 900;
+                }
+                i {
+                    font-size: 4em;
+                }
+                span {
+                    font-size: 16px;
+                }
+                &.price-yearly {
+                    display: none;
+                }
+            }
+        }
+        hr {
+            max-width: 76%;
+            margin: 30px auto;
+        }
+        small {
+            display: block;
+            margin-top: 5px;
+        }
+    }
+}

@@ -1,0 +1,133 @@
+#makePortfolio {
+    .portfolio-item {
+        background: #efefef;
+    }
+    .col-md-4 {
+        padding: 0 !important;
+    }
+}
+.portfolio {
+    background-color: #f6f6f6;
+    .controls {
+        margin: 20px auto;
+        text-align: center;
+        button {
+            &.filter {
+                font-weight: bold;
+                color: #b5b5b5;
+                background: transparent;
+                padding: .525em .9375em;
+                @include border-radius(5em);
+                border: 1px solid transparent;
+                @include transition(all 0.2s);
+            }
+            &.active, &:hover {
+                color: #ffffff;
+                background: $main-color;
+                border: 1px solid $main-color;
+            }
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .portfolio-container {
+
+        li{
+
+            width: 33%;
+        }
+      
+        .portfolio-item {
+            overflow: hidden;
+            cursor: pointer;
+            width: 33%;
+            position: relative;
+            img {
+                position: relative;
+                @include transition(all 0.7s ease);
+            }
+            &:hover {
+                &:before {
+                    @include opacity(0.5);
+                }
+                img {
+                    @include rotate(-1deg);
+                    @include scale(1.3);
+                }
+                .meta {
+                    z-index: 400;
+                    &:before {
+                        @include opacity(1);
+                        @include animate(flipInY);
+                    }
+                }
+            }
+            &:before {
+                @include transition(all 0.3s ease);
+                z-index: 200;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: darken($main-color, 5%);
+                position: absolute;
+                top: 0;
+                opacity: 0;
+            }
+            .meta {
+                @include transition(all 0.3s ease);
+                text-align: center;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                width: 60%;
+                height: 100%;
+                &:before {
+                    top: 50%;
+                    left: 50%;
+                    margin: -20px 0 0 -20px;
+                    @include transition(all 0.3s ease);
+                    font-family: Stroke-Gap-Icons;
+                    background: #ffffff;
+                    content: "\e6a4";
+                    color: $main-color;
+                    position: absolute;
+                    display: inline-block;
+                    border: 1px solid $main-color;
+                    @include opacity(0);
+                    font-size: 20px;
+                    line-height: 40px;
+                    width: 40px;
+                    height: 40px;
+                    @include border-radius(20px);
+                }
+                .title {
+                    text-transform: capitalize;
+                    @include transition(all 0.3s ease);
+                    font-size: 36px;
+                    color: #fff;
+                    line-height: 37px;
+                    letter-spacing: -1px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+#novelty-portfolio {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.customHtml-portfolio {
+    text-align: left;
+    padding-bottom: 10px;
+    height: auto !important;
+    .btn {
+        margin-top: 25px;
+        text-align: right;
+    }
+}

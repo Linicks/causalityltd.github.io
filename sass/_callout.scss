@@ -1,0 +1,37 @@
+section#callout, section#callout-2 {
+    background-color: $main-color;
+    padding: 50px 0;
+    position: relative;
+    &.image {
+        background-image: url('../images/morning.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 100px 0;
+    }
+}
+.callout {
+    display: table;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    color: #ffffff;
+    > div {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    h2 {
+        font-size: 2em;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        margin: 5px 0;
+        padding: 0;
+    }
+    .callout-button {
+        text-align: right;
+        -webkit-backface-visibility: hidden;
+    }
+}

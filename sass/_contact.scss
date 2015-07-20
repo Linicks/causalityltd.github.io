@@ -1,0 +1,34 @@
+section#contact {
+	position: relative;
+    .contact-form {
+        padding-top: 20px;
+        .form-control {
+            @include border-radius(3em);
+            border: 1px solid $main-color;
+            padding: 0 25px;
+            height: 50px;
+        }
+        textarea {
+            overflow: hidden;
+            padding: 25px !important;
+            height: 200px !important;
+            @include border-radius(1em);
+
+        }
+    }
+    #googlemap {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        @include opacity(0.1);
+    }
+    #map-switch{
+    	position: absolute;
+    	left: 5px;
+    	bottom: 10px;
+
+    }
+}

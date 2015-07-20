@@ -1,0 +1,102 @@
+@media (min-width: 1200px) {} @media (min-width: 768px) {
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin-left: auto !important;
+    }
+}
+@media (max-width: 992px) {
+    .about-tab-content .colored-box {
+        padding-bottom: 0 !important;
+        min-height: 50px;
+    }
+      section.slider{
+        h1{
+            font-size: 3em !important;
+        }
+
+    }
+}
+@media (max-width: 767px) {
+    section.home-slider .home-slider-caption {
+        width: 70%;
+    }
+    section.pricing .pricing-tables > * {
+        width: 100%;
+        display: block !important;
+    }
+    .team-member {
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        .member-thumb {
+            width: 100%;
+        }
+    }
+    .portfolio {
+        .portfolio-container {
+            li {
+                width: 100%;
+            }
+            .portfolio-item {
+                width: 100%;
+            }
+        }
+    }
+
+    
+}
+@media (max-width: 480px) {
+    section.slider{
+        h1{
+            font-size: 1.5em !important;
+            letter-spacing: 0;
+        }
+
+    }
+    .gallery-container {
+        #novelty-gallery {
+            li {
+                width: 100%;
+                .gallery-item{
+                    .caption{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    section.home-slider .home-slider-caption {
+        width: 90%;
+        h1 {
+            font-size: 4em;
+        }
+    }
+    .callout {
+        > div {
+            display: block;
+        }
+        h2, .callout-button {
+            text-align: center;
+        }
+    }
+    section {
+        .section-heading {
+            font-size: 3em;
+        }
+        .section-sub-heading {
+            font-size: 1em;
+        }
+    }
+    #footer-bottom #footer-nav {
+        text-align: left !Important;
+        float: none !Important;
+        li {
+            margin: 0 !Important;
+        }
+    }
+    .more-team-members li {
+        width: 49%;
+        img {
+            width: 100%;
+        }
+    }
+}

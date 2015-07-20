@@ -1,0 +1,74 @@
+.btn-primary {
+  border-color: #5bc0de !important;
+  background: #5bc0de;
+  color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.active {
+  background: #46b8da !important;
+  color: #fff !important;
+}
+.btn-primary.btn-outline {
+  background: transparent;
+  color: #5bc0de !important;
+}
+
+a {
+  color: #5bc0de;
+}
+a:hover {
+  color: #2390b0;
+}
+
+.navbar-default .navbar-toggle .icon-bar,.gallery-container .gallery-item .caption, .nicescroll-rails div, #back-to-top a, #lightGallery-close, #lightGallery-Gallery .thumb_cont .thumb_info .close, .customHtml, #lightGallery-action a, .about-tabs li.active a, .about-tabs li:hover a, .about-tab-content, section#callout, section#callout-2 {
+  background-color: #5bc0de !important;
+}
+
+.services .service:hover, .preloading, .portfolio .controls button.active, .portfolio .controls button:hover, .more-team-members li:hover p.designation, .gallery-container .gallery-item .gallery-item-icon, .customHtml, .thumb_info, section.pricing .pricing-tables .popular > .pricing-table {
+  background: #5bc0de !important;
+}
+
+.portfolio .controls button.active, .portfolio .controls button:hover, .portfolio .portfolio-container .portfolio-item .meta:before, .more-team-members li:hover p.designation, .about-tabs li.active a, .about-tabs li:hover a, section#contact .contact-form .form-control, footer section .section-content .widget .footer-newsletter .form-control {
+  border-color: #5bc0de;
+}
+
+.portfolio .portfolio-container .portfolio-item .meta:before {
+  color: #5bc0de;
+}
+
+#lightGallery-outer, .thumb_cont {
+  background: #175b70 !important;
+}
+
+.about-tabs li.active a:after {
+  border-top-color: #5bc0de;
+}
+
+.portfolio .portfolio-container .portfolio-item:before, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background-color: #46b8da;
+}
+
+section.pricing .pricing-tables .popular hr {
+  border-color: #46b8da !important;
+}
+
+.services .service:hover .btn {
+  color: #31b0d5 !important;
+  border-color: #31b0d5 !important;
+}
+.services .service:hover .btn:hover {
+  color: #b0e1ef !important;
+  border-color: #b0e1ef !important;
+  background: #31b0d5 !important;
+}
+
+.btn-outline.btn-white {
+  color: #fff;
+  border-color: #fff;
+}
+.btn-outline.btn-white:hover, .btn-outline.btn-white:focus {
+  background: #ffffff;
+  color: #5bc0de !important;
+}
+.btn-outline.btn-white:hover .icon-with-btn, .btn-outline.btn-white:focus .icon-with-btn {
+  color: #5bc0de;
+}

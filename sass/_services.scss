@@ -1,0 +1,77 @@
+.services:hover .service {
+    @include opacity(0.5);
+}
+.services:hover .service:hover {
+    @include opacity(1);
+}
+@media screen and (max-width: 992px) {
+    .services {
+        margin-top: 35px;
+    }
+}
+#services {
+    background: #f6f6f6;
+}
+.services {
+    position: relative;
+    .service {
+        background: #fff;
+        padding: 30px 15px 30px;
+        text-align: center !important;
+        z-index: 1;
+        @include box-shadow(0 0 1px rgba(0, 0, 0, 0.2));
+        @include transition(all 0.3s);
+        .service-icon {
+            color: $service-icon-color;
+            margin-top: 15px;
+            @include transition(color 0.3s);
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.2em;
+            font-weight: bolder;
+            position: relative;
+            padding: 10px 0 15px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            &:after {
+                content: '';
+                width: 40px;
+                height: 1px;
+                background: #dee8ed;
+                left: 50%;
+                margin-left: -20px;
+                position: absolute;
+                bottom: 5px;
+            }
+        }
+        &:hover {
+            z-index: 2;
+            @include box-shadow(0 0 30px #dcdcda);
+            background: $main-color;
+            color: lighten($main-color, 100%);
+            .animate-icon {
+                color: lighten($main-color, 100%);
+                @include animate(rubberBand);
+            }
+            .btn {
+                color: darken($main-color, 10%) !important;
+                border-color: darken($main-color, 10%) !important;
+                &:hover {
+                    color: lighten($main-color, 20%) !important;
+                    border-color: lighten($main-color, 20%) !important;
+                    background: darken($main-color, 10%) !important;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+    .services .service {
+        .service-icon {
+            margin-top: 5px !important;
+        }
+    }
+}

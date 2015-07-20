@@ -1,0 +1,109 @@
+@import"bootstrap-compass";
+@import"bootstrap-variables";
+@import"bootstrap";
+@import"compass/css3";
+/* Boostrap */
+
+.btn-outline {
+    @extend .btn;
+    @include transition(all .3s);
+    background: transparent;
+    padding: 20px 40px;
+    border-width: 2px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+    &.btn-sm{
+        padding: 5px 10px;
+    }
+    &.btn-medium {
+        padding: 10px 20px;
+        &.btn-icon {
+            position: relative;
+            .icon-with-btn {
+                padding-left: 8px;
+                color: #fff;
+                position: absolute;
+                top: 50%;
+                @include translateY(-50%);
+                @include transition(all 0.3s);
+                opacity: 0;
+            }
+            &:hover,&:focus {
+                padding-right: 35px;
+                .icon-with-btn {
+                    display: inline-block;
+                    opacity: 1;
+                    padding-left: 12px;
+                }
+                
+            }
+        }
+    }
+    &:hover {
+        color: #fff !important;
+    }
+    &.btn-primary {
+        color: $btn-primary-border;
+        border-color: $brand-primary;
+        &:hover,&:focus,&.active {
+            background: $brand-primary;
+            color: #fff !important;
+            outline: none;
+            @include box-shadow(none);
+        }
+    }
+    &.btn-danger {
+        color: $btn-danger-border;
+    }
+    &.btn-success {
+        color: $btn-success-border;
+    }
+    &.btn-warning {
+        color: $btn-warning-border;
+    }
+    &.btn-info {
+        color: $btn-info-border;
+    }
+    &.btn-default {
+        color: $btn-default-border;
+        &:hover,&:focus {
+            background: transparent;
+        }
+    }
+    &.btn-white{
+        color: #fff;
+        border-color: #fff;
+        &:hover,&:focus{
+            background: #ffffff;
+            color: $brand-primary !important;
+            .icon-with-btn{
+                color: $brand-primary;
+            }
+        }
+    }
+}
+.btn-icon {
+    position: relative;
+    .icon-with-btn {
+        padding-left: 15px;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        @include translateY(-50%);
+        @include transition(all .3s);
+        opacity: 0;
+    }
+    &:hover {
+        padding-right: 50px;
+        .icon-with-btn {
+            display: inline-block;
+            opacity: 1;
+            padding-left: 25px;
+        }
+    }
+}
+.btn-rounded {
+    @include border-radius(5em);
+}

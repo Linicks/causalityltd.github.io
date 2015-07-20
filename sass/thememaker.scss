@@ -1,0 +1,73 @@
+$basic-color: #f0ad4e;
+// Enter the color above in place of $basic-color to create a new color theme, everything will be adjusted accordingly.
+.btn-primary {
+    border-color: $basic-color !important;
+    background: $basic-color;
+    color: #ffffff;
+    &:hover, &:focus, &.active {
+        background: darken($basic-color, 5%) !important;
+        color: #fff !important;
+    }
+    &.btn-outline {
+        background: transparent;
+        color: $basic-color !important;
+    }
+}
+a {
+    color: $basic-color;
+    &:hover {
+        color: darken($basic-color, 20%);
+    }
+}
+.navbar-default .navbar-toggle .icon-bar, .nicescroll-rails div, #back-to-top a, #lightGallery-close, .gallery-container .gallery-item .caption, #lightGallery-Gallery .thumb_cont .thumb_info .close, .customHtml, #lightGallery-action a, .about-tabs li.active a, .about-tabs li:hover a, .about-tab-content, section#callout, section#callout-2 {
+    background-color: $basic-color !important;
+}
+.services .service:hover, .preloading, .portfolio .controls button.active, .portfolio .controls button:hover, .more-team-members li:hover p.designation, .gallery-container .gallery-item .gallery-item-icon, .customHtml, .thumb_info, section.pricing .pricing-tables .popular > .pricing-table {
+    background: $basic-color !important;
+}
+.portfolio .controls button.active, .portfolio .controls button:hover, .portfolio .portfolio-container .portfolio-item .meta:before, .more-team-members li:hover p.designation, .about-tabs li.active a, .about-tabs li:hover a, section#contact .contact-form .form-control, footer section .section-content .widget .footer-newsletter .form-control {
+    border-color: $basic-color;
+}
+.portfolio .portfolio-container .portfolio-item .meta:before {
+    color: $basic-color;
+}
+#lightGallery-outer, .thumb_cont {
+    background: darken($basic-color, 35%) !important;
+}
+.about-tabs li.active a:after {
+    border-top-color: $basic-color;
+}
+.portfolio .portfolio-container .portfolio-item:before, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: darken($basic-color, 5%);
+}
+section.pricing .pricing-tables .popular hr {
+    border-color: darken($basic-color, 5%) !Important;
+}
+.services {
+    .service {
+        &:hover {
+            .btn {
+                color: darken($basic-color, 10%) !important;
+                border-color: darken($basic-color, 10%) !important;
+                &:hover {
+                    color: lighten($basic-color, 20%) !important;
+                    border-color: lighten($basic-color, 20%) !important;
+                    background: darken($basic-color, 10%) !important;
+                }
+            }
+        }
+    }
+}
+.btn-outline {
+    &.btn-white {
+        color: #fff;
+        border-color: #fff;
+        &:hover, &:focus {
+            background: #ffffff;
+            color: $basic-color !important;
+            .icon-with-btn {
+                color: $basic-color;
+            }
+        }
+    }
+}
